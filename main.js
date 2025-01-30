@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
-let color = "blue";
 
+const color = 256;
 const displayGrid = (count = 16) => {
   if (count > 100) count = 100; // to limit the grid count to 100x100
   for (let i = 1; i <= count; i++) {
@@ -17,7 +17,7 @@ const displayGrid = (count = 16) => {
   const cols = document.querySelectorAll(".column");
   cols.forEach((x) => {
     x.addEventListener("mouseenter", () => {
-      x.style.backgroundColor = color;
+      x.style.backgroundColor = `rgb(${Math.round(color * Math.random())},${Math.round(color * Math.random())},${Math.round(color * Math.random())})`;
 
     });
   });
