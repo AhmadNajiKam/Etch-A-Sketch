@@ -1,0 +1,18 @@
+.column {
+  border: solid red 1px;
+}
+
+.row {
+  border: solid red 1px;
+  min-height: 6.25vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  border-top: solid red 2px;
+  border-bottom: solid red 2px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
