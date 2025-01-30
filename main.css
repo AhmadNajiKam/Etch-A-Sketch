@@ -1,6 +1,7 @@
 .column {
   border: solid black 0.5px;
   flex: 1;
+  opacity: 1;
 }
 
 .row {

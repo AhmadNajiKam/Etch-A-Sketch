@@ -15,9 +15,9 @@ const displayGrid = (count = 16) => {
   }
   container.classList.add("container");
   const cols = document.querySelectorAll(".column");
-  cols.forEach((x) => {
-    x.addEventListener("mouseenter", () => {
-      x.style.backgroundColor = `rgb(${Math.round(color * Math.random())},${Math.round(color * Math.random())},${Math.round(color * Math.random())})`;
+  cols.forEach((cell) => {
+    cell.addEventListener("mouseenter", () => {
+      cell.style.backgroundColor = `rgb(${Math.round(color * Math.random())},${Math.round(color * Math.random())},${Math.round(color * Math.random())})`;
 
     });
   });
