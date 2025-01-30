@@ -2,6 +2,7 @@ const container = document.querySelector(".container");
 let color = "blue";
 
 const displayGrid = (count = 16) => {
+  if (count > 100) count = 100; // to limit the grid count to 100x100
   for (let i = 1; i <= count; i++) {
     const row = document.createElement("div");
     row.classList.add("row", "cell");
@@ -30,7 +31,8 @@ btn.textContent = "Change grid size";
 const body = document.querySelector("body");
 body.insertBefore(btn, container);
 btn.addEventListener("click", () => {
-  const gridNumber = Number(prompt("Enter the number of rows/columns you want : "));
+  let gridNumber = Number(prompt("Enter the number of rows/columns you want (max is 100) : "));
+
   clearGrid();
   displayGrid(gridNumber);
 });
