@@ -1,17 +1,17 @@
 .column {
-  border: solid red 1px;
-  min-width: 6vw;
+  border: solid black 0.5px;
+  flex: 1;
 }
 
 .row {
-  border: solid red 1px;
-  min-height: 6.25vh;
+  border: solid black 0.5px;
   display: flex;
+  flex: 1;
 }
 
 .container {
-  border-top: solid red 2px;
-  border-bottom: solid red 2px;
+  border-top: solid black 2px;
+  border-bottom: solid black 2px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
